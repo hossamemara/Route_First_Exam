@@ -12,32 +12,47 @@
     <title>Angora - Responsive One Page Parallax Template</title>
     <link rel="icon" href="Images/company-1.png">
    
-    <!-- External Files -->
-
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/all.min.css">
-   <link rel="stylesheet" href="css/style.css">
+ 
+    
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 
-<body onscroll=changeBg()>
+<body>
 
 
     <!--  ________________ Home Start Here ________________  -->
 
 
     <div class="home vh-100" id="home-page">
-        <div class="settings">
-            <i class="fas fa-cogs"></i>
-
-
-
+  
+        <div class="mode-options position-fixed d-flex">
+            <div class="mode-sider p-1">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="color-options p-1 bg-secondary">
+                <h4>Colors : </h4>
+                <ul class="list-unstyled m-0">
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                    <li class="colors"></li><br>
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                    <li class="colors"></li><br>
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                </ul>
+            </div>
+           
         </div>
         <div class="scroll-me">
             <a href="#about"><img src="Images/scroll_.gif" width="100px" height="100px"></a>
@@ -131,20 +146,20 @@
                     <div class="carousel-item active vh-100">
                         <img src="Images/slideshow-1.jpg" class="d-block w-100 vh-100" alt="slideshow-1">
                         <div class="carousel-caption d-block">
-                            <h2>Advanced in digital works.</h2>
+                            <h2 class="mode-change">Advanced in digital works.</h2>
                         </div>
                     </div>
                     <div class="carousel-item vh-100">
                         <img src="Images/slideshow-2.jpg" class="d-block w-100 vh-100" alt="slideshow-2">
                         <div class="carousel-caption d-block">
-                            <h2>Focused on strategy.</h2>
+                            <h2 class="mode-change">Focused on strategy.</h2>
 
                         </div>
                     </div>
                     <div class="carousel-item vh-100">
                         <img src="Images/slideshow-3.jpg" class="d-block w-100 vh-100" alt="slideshow-3">
                         <div class="carousel-caption d-block">
-                            <h2>We build great brands</h2>
+                            <h2 class="mode-change">We build great brands</h2>
                         </div>
                     </div>
                 </div>
@@ -798,7 +813,11 @@
 
 
 
-
+   <!-- External Files -->
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/main.js"></script>
  
 </body>
 

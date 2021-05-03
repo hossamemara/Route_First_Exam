@@ -150,15 +150,31 @@ html {
 
 /* ___________ Home properties Start Here _____________*/
 
-.settings {
-    position: fixed;
-    left: 0;
-    top: 20%;
-    font-size: 20px;
-    z-index: 2;
-    padding: 5px 5px;
-    color: whitesmoke;
-    background-color: black;
+
+
+.mode-options
+{
+    top: 200px;
+    
+    z-index: 54555555555555555555555; 
+    
+}
+
+.mode-sider
+{
+    height: fit-content;
+    background-color: orange;
+}
+
+.color-options{
+    border: orange 1px solid;
+}
+.color-options li
+{
+height: 20px;
+width: 20px;
+background-color: burlywood;
+display: inline-block;
 }
 
 .scroll-me {
