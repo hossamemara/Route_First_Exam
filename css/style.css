@@ -150,7 +150,13 @@ html {
 
 /* ___________ Home properties Start Here _____________*/
 
-
+.to-top-btn
+{
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999999;
+    display: none;
+}
 
 .mode-options
 {
