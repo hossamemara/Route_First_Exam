@@ -11,13 +11,14 @@
     <meta name="description" content="Free Website @ Route35">
     <title>Angora - Responsive One Page Parallax Template</title>
     <link rel="icon" href="Images/company-1.png">
-   
- 
-    
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -30,7 +31,11 @@
 
 
     <div class="home vh-100" id="home-page">
-  
+        <div id="loader">
+            <i class="fas fa-spinner fa-5x fa-spin"></i>
+
+
+        </div>
         <div class="mode-options position-fixed d-flex">
             <div class="mode-sider p-1">
                 <i class="fas fa-paint-brush"></i>
@@ -52,16 +57,16 @@
                     <li class="colors"></li>
                 </ul>
             </div>
-           
+
         </div>
         <div class="scroll-me">
             <a href="#about" id="scroll-me"><img src="Images/scroll_.gif" width="100px" height="100px"></a>
 
         </div>
-<button class="btn btn-danger to-top-btn position-fixed"><i class="fas fa-chevron-circle-up"></i></button>
+        <button class="btn btn-danger to-top-btn position-fixed"><i class="fas fa-chevron-circle-up"></i></button>
         <!-- _______  NavBar Start Here  _______ -->
 
-        <nav class="navbar navbar-expand-lg fixed-top p-3"  id="mynav">
+        <nav class="navbar navbar-expand-lg fixed-top p-3" id="mynav">
             <!--  _______ NavBar Container Start Here _______  -->
 
             <div class="container">
@@ -82,7 +87,7 @@
                 <!--  _______ Toggler Button End Here _______  -->
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto" >
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#" style="color: #f75a5a;">Home <span
                                     class="sr-only">(current)</span></a>
@@ -106,7 +111,7 @@
                             <a class="nav-link" href="#contacts">Get In Touch</a>
                         </li>
 
-                   
+
 
                     </ul>
 
@@ -161,24 +166,24 @@
                         </div>
                     </div>
                 </div>
-                <a  class="previous" href="#carouselExampleFade" role="button" data-slide="prev">
-                    
+                <a class="previous" href="#carouselExampleFade" role="button" data-slide="prev">
+
                     <div class="previous">
                         <i class="fas fa-chevron-left fa-3x" aria-hidden="true">
                             <div class="prev-cover"></div>
                         </i>
                     </div>
-                        
+
 
 
                 </a>
-                <a  class="next"  href="#carouselExampleFade" role="button" data-slide="next">
+                <a class="next" href="#carouselExampleFade" role="button" data-slide="next">
                     <div class="next">
-                    <i class="fas fa-chevron-right fa-3x" aria-hidden="true">
-                        <div class="next-cover"></div>
-                    </i>
-                </div>
-                    
+                        <i class="fas fa-chevron-right fa-3x" aria-hidden="true">
+                            <div class="next-cover"></div>
+                        </i>
+                    </div>
+
                 </a>
             </div>
 
@@ -489,7 +494,46 @@
                 Morbi dapibus,
                 tellus a gravida faucibus, elit ipsum sollicitudin risus, id ultricies arcu neque eget velit.</p>
         </header>
-        <div id="carouselExampleIndicators" class="carousel slide overflow-hidden" data-ride="carousel">
+        <div class="owl-carousel owl-theme w-70">
+            <div class="item active"><img src="Images/client-1.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item"><img src="Images/client-2.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="item"><img src="Images/client-3.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="item"><img src="Images/client-4.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="item"><img src="Images/client-5.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="item"><img src="Images/client-6.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="item"><img src="Images/client-7.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item"><img src="Images/client-8.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item"><img src="Images/client-9.png" class="client-img rounded-circle">
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+
+
+
+
+        </div>
+        <!-- <div id="carouselExampleIndicators" class="carousel slide overflow-hidden" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0">
                     <img src="Images/client-1.png" class="client-img rounded-circle d-block">
@@ -519,7 +563,7 @@
                     <img src="Images/client-9.png" class="client-img rounded-circle d-block">
                 </li>
             </ol>
-            
+
             <div class="carousel-inner w-25 m-auto">
                 <div class="carousel-item active  text-center">
                     <h1>Lorem ipsum dolor sit amet.</h1>
@@ -550,8 +594,8 @@
                 </div>
             </div>
 
-        </div>
-        
+        </div> -->
+
     </div>
 
     <!-- _________ Client Review End Here _________ -->
@@ -687,11 +731,7 @@
 
         </section>
 
-        <div class="to-up text-center position-absolute">
-            <a href="#home-page"><i class="fas fa-chevron-circle-up"></i></a>
 
-
-        </div>
     </div>
     <!-- _________ Get In Touch End Here _________ -->
 
@@ -811,12 +851,14 @@
 
 
 
-   <!-- External Files -->
-   <script src="js/jquery-3.6.0.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/main.js"></script>
- 
+    <!-- External Files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+
 </body>
 
 

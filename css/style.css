@@ -150,37 +150,74 @@ html {
 
 /* ___________ Home properties Start Here _____________*/
 
-.to-top-btn
-{
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #33445f;
+    z-index: 999999999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader i {
+    color: #C1A69D;
+}
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999999999999;
+}
+
+
+.gooey .dots span {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+    background: rgb(175, 60, 60);
+    border-radius: 50%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.to-top-btn {
     bottom: 20px;
     right: 20px;
     z-index: 99999999;
     display: none;
 }
 
-.mode-options
-{
+.mode-options {
     top: 200px;
-    
-    z-index: 54555555555555555555555; 
-    
+    right: 0;
+    z-index: 99999999;
 }
 
-.mode-sider
-{
+.mode-sider {
     height: fit-content;
     background-color: orange;
 }
 
-.color-options{
+.color-options {
     border: orange 1px solid;
 }
-.color-options li
-{
-height: 20px;
-width: 20px;
-background-color: burlywood;
-display: inline-block;
+
+.color-options li {
+    height: 20px;
+    width: 20px;
+    background-color: burlywood;
+    display: inline-block;
 }
 
 .scroll-me {
@@ -193,8 +230,7 @@ display: inline-block;
 
 /* _______ NavBar Start Here _______*/
 
-nav
-{
+nav {
     z-index: 999999999999999999999999999999999999999999;
 }
 
@@ -453,8 +489,6 @@ nav::after {
 
 .carousel-indicators {
     position: relative;
-    
-    
 }
 
 .carousel-indicators li {
@@ -462,22 +496,16 @@ nav::after {
     width: 100%;
     background-color: transparent;
     padding: 5px 5px;
-    
 }
 
 .carousel-indicators .active img {
     transform: scale(1.2);
 }
 
-.client-img{
-    width: 100px;
-    height: 100px;
-
+.client-img {
+    width: 150px;
+    height: 150px;
 }
-
-
-
-
 
 /* _________ Client Review End Here _________ */
 
@@ -496,16 +524,6 @@ nav::after {
     .c2 {
         width: 70%;
     }
-}
-
-.to-up {
-    opacity: 0.5;
-    left: 48%;
-}
-
-.to-up a {
-    font-size: 50px;
-    color: #f75a5a;
 }
 
 /* _________ Get In Touch End Here _________ */

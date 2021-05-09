@@ -7,23 +7,26 @@ for (var i = 0; i < myColors.length; i++) {
 }
 
 
-$('.colors').click(function () {
+$('.colors').click(async function () {
     var mode = $(this).css('backgroundColor')
-    console.log(mode);
-    $('.mode-change').css('color', mode)
+    
+    await $('.mode-change').css('color', mode)
+    await $('.mode-options').animate({ 'right': -modeOptionsWidth }, 500)
 })
 
 var modeOptionsWidth = $('.color-options').outerWidth();
 
 $('.mode-options').css({ 'right': -modeOptionsWidth })
 
-$('.mode-sider').click(function () {
+$('.mode-sider').click(async function () {
 
     if ($('.mode-options').css('right') == '0px') {
         $('.mode-options').animate({ 'right': -modeOptionsWidth }, 500)
     }
     else {
-        $('.mode-options').animate({ 'right': '0px' }, 500)
+        await $('.mode-options').animate({ 'right': '0px' }, 1000)
+        await $('.mode-options').animate({ 'right': '0px' }, 2000)
+        await $('.mode-options').animate({ 'right': -modeOptionsWidth }, 500)
     }
 
 })
@@ -81,4 +84,31 @@ $(window).scroll(function () {
 $('.to-top-btn').click(function()
 {
     $('body,html').animate({ scrollTop: 0 }, 500)
+})
+
+
+/* _____________ Loader  _____________ */
+
+$(document).ready(function()
+{
+    $('#loader').fadeOut(1000,function(){$('body').css('overflow','visible')})
+    
+})
+
+
+
+$('.owl-carousel').owlCarousel({
+    items:6,
+    loop:true,
+    margin:5,
+    center:true,
+    merge:true,
+    responsive:{
+        678:{
+            mergeFit:true
+        },
+        1000:{
+            mergeFit:false
+        }
+    }
 })
