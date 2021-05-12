@@ -97,18 +97,43 @@ $(document).ready(function()
 
 
 
-$('.owl-carousel').owlCarousel({
-    items:6,
-    loop:true,
-    margin:5,
-    center:true,
-    merge:true,
-    responsive:{
-        678:{
-            mergeFit:true
-        },
-        1000:{
-            mergeFit:false
-        }
+    if(window.matchMedia('(max-width: 768px)').matches)
+    {
+        $('.owl-carousel').owlCarousel({
+            items:4,
+            loop:true,
+            margin:5,
+            center:true,
+            merge:true,
+            responsive:{
+                678:{
+                    mergeFit:true
+                },
+                1000:{
+                    mergeFit:false
+                }
+            }
+        })    
+
     }
-})
+    else
+    {
+        $('.owl-carousel').owlCarousel({
+            items:6,
+            loop:true,
+            margin:5,
+            center:true,
+            merge:true,
+            responsive:{
+                678:{
+                    mergeFit:true
+                },
+                1000:{
+                    mergeFit:false
+                }
+            }
+        })   
+    }
+
+  
+
