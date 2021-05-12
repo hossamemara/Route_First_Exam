@@ -100,7 +100,7 @@ $(document).ready(function()
     if(window.matchMedia('(max-width: 768px)').matches)
     {
         $('.owl-carousel').owlCarousel({
-            items:4,
+            items:3,
             loop:true,
             margin:5,
             center:true,
